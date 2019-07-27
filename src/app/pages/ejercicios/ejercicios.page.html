@@ -1,0 +1,21 @@
+<app-header-back titulo="{{titulo}}"></app-header-back>
+
+<ion-content>
+    <ion-slides mode="ios" pager="ios" scrollbar="ios">
+        <ion-slide *ngFor="let slide of slides; let i = index" class="slide">
+            <div class="div_description">
+                <img [src]="slide.img" class="slide-image">
+
+                <div class="div_paso">
+                    <hr>
+                    <h4 class="text_color_gray_div_h4">PASO {{i+1}}</h4>
+                    <hr>
+                </div>
+    
+                <h5 class="text_color_gray_div_h5">{{slide.descripcion}}</h5>
+
+                <br>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

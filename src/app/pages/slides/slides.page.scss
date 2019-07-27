@@ -1,0 +1,82 @@
+.slide {
+    position: relative;
+    display: flex;
+    //align-items: center;
+    height: 100vh;
+    width: 100%;
+   }
+.slide-toolbar {
+    position:fixed;
+    text-align: center;
+    top: 0px;
+    z-index: 1;
+    --background: transparent;
+} 
+.slide-toolbar-img {
+    width: 20%;
+    margin: 1em;
+}
+
+.slide-image {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    }
+
+h2 {
+    font-family: "Futura";
+    font-style: italic;
+    font-weight: 700;
+    font-size: 1.55em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: white;
+    }
+   
+@media (min-width: 32em) {
+    h2 {
+    font-size: 4em;
+    }
+   }
+   
+.mast__header {
+    z-index: 5;
+    width: 100%;
+    top: 45%;
+    text-align: justify;
+    -webkit-animation: fade-in 2s 1.5s ease both;
+    animation: fade-in 2s 1.5s ease both;
+    margin: 2.5em;
+    }
+   
+.mast__pretitle {
+    font-family: "Futura";
+    margin-bottom: 0.5em;
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: white;
+    }
+   
+h6 {
+    font-family: "Futura";
+    position:fixed;
+    text-align: center;
+    font-size: 0.8em;
+    bottom:0px;
+    height:30px;
+    width:80%;
+    color: white;
+    margin-bottom: 4em;
+   }
+
+.slide_button {
+    font-family: "Futura";
+    margin-bottom: 6em;
+    position:fixed;
+    bottom:0px;
+    width:70%;
+}

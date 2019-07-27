@@ -1,0 +1,41 @@
+ion-item  {
+    padding: 0px;
+    --padding-start: 0; 
+}
+
+ion-grid {
+    padding: 0%;
+}
+
+.row_categoria {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+}
+
+.col_imagen {
+    align-self: flex-start;
+    background: var(--ion-color-light);
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+
+    img {
+        align-self: center;
+    }
+}
+
+.col_titulo {
+    display: flex-end;
+    flex-grow: 4;
+    height: 100%;
+
+    h2  {
+        margin-top: 10px;
+        margin-left: 10px;
+        text-transform: capitalize;
+        align-self: center;
+    }
+}

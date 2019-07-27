@@ -1,0 +1,54 @@
+ion-grid{
+    padding: 0;
+}
+
+.footer-encuesta {
+    position:fixed;
+    bottom: 0px;
+    z-index: 1;
+    --background: transparent;
+} 
+
+.item-footer{
+    font-family: "Eurostile LT Std";
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--ion-color-primary);
+    height: 100%;
+    text-align: center;
+
+    h6{
+        font-size: 0.7em;
+        margin: 0;
+        height: 40px;
+        min-height: 40px;
+        padding-top: 10px; 
+    }
+}
+
+.item-selected{
+    background:rgb(205,214,100);
+    background: transparent\9;
+    background:rgba(205,214,100,0.2);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CDD66400,endColorstr=#CDD66400);
+    zoom: 1;
+}
+
+.progress-bar {
+    background: transparent;
+}
+
+.porcentaje{
+    font-family: "Eurostile LT Std";
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--ion-color-primary);
+    height: 100%;
+
+    h6{
+        font-size: 0.9em;
+        margin: 0;
+    }
+}

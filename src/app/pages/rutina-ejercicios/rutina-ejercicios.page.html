@@ -1,0 +1,28 @@
+<app-header-back titulo="{{titulo}}"></app-header-back>
+
+<ion-content fullscren>
+    <ion-list>
+        <app-item-ejercicio *ngFor="let serie of series"
+            pagePadre="{{pagePadre}}"
+            nombre="{{serie.nombre}}"
+            numSeries="{{serie.numSeries}}"
+            numRepeticiones="{{serie.numRepeticiones}}"
+            numPeso="{{serie.numPeso}}">
+        </app-item-ejercicio>
+    </ion-list>
+ 
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar color="medium">
+         <ion-buttons slot="start">
+            <ion-button (click)="onClickPlayTime()">
+                <ion-icon slot="start" name="pause"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title slot="secondary" class="textSizeTime">00:00</ion-title>
+        <ion-text slot="primary">
+            <h6 class="textSize">Felicidades por conseguir 5 repeticiones! Descansa 90 segundos si fue fácil, 3 minutos si es difícil.</h6>
+        </ion-text>
+    </ion-toolbar>
+</ion-footer>

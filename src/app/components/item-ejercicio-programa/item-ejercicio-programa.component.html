@@ -1,0 +1,14 @@
+<ion-item button (click)="buttonClick(nombre)">
+    <ion-ripple-effect></ion-ripple-effect>
+    <ion-grid>
+      <ion-row class="row_categoria">
+        <ion-col class="col_titulo">
+            <h2 class="text_color_gray">{{nombre}}</h2>
+            <h6 button (click)="onClickSerieRepeticiones()">{{repeticiones}} {{peso}}</h6>
+        </ion-col>
+        <ion-col class="col_chechbox">
+          <ion-checkbox></ion-checkbox>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>

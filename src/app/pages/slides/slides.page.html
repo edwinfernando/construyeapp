@@ -1,0 +1,31 @@
+<ion-content>
+  <ion-slides mode="ios" pager="ios" class="fondo">
+    <ion-slide *ngFor="let slide of slides; let i = index" class="slide">
+      <ion-toolbar class="slide-toolbar">
+        <img slot="end" src="/assets/logo.svg" class="slide-toolbar-img" >
+      </ion-toolbar>
+        
+      <img [src]="slide.img" class="slide-image">
+        
+      <header class="mast__header">
+        <h2 class="ion-justify-content-start">{{slide.titulo}}</h2>
+        <h5 class="mast__pretitle">{{slide.subtitulo}}</h5>
+      </header>
+
+      <ion-button *ngIf="i == getSize()" 
+                    class="slide_button"
+                    size="large"
+                    shape="round"
+                    expand="block"
+                    color="primary"
+                    routerLink="/tabs" >
+          <ion-text color="light">
+            <h3>Ingresar</h3>
+          </ion-text>
+        </ion-button>
+
+      <h6>{{slide.piePagina}}</h6>
+       
+    </ion-slide>
+  </ion-slides>
+</ion-content>

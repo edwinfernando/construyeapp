@@ -1,0 +1,30 @@
+.input_item{
+    --background: transparent;
+    color: var(--ion-color-light);
+    margin-left: 10%;
+    margin-right: 10%;
+
+    input {
+        color: var(--ion-color-light);
+    }
+}
+
+ion-item {
+    --border-color: var(--ion-color-primary);
+  }
+
+  .contenido{
+    font-family: "Futura";
+    margin-bottom: 0.5em;
+    font-size: 0.7em;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: white;
+    }
+
+.bottom {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+}

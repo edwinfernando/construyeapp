@@ -1,0 +1,54 @@
+ion-item  {
+    padding: 0%;
+    --padding-start: 0;
+}
+
+ion-grid {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.row_titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100%;
+    padding-left: 10px;
+    height: 35px;
+    z-index: 10;
+}
+
+.col_titulo_1 {
+    flex-grow: 5;
+    align-self: flex-start;
+}
+
+.col_titulo_2 {
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+    padding-right: 0%;
+
+    ion-button {
+        align-self: flex-start;
+        text-align: right;
+        text-decoration-line: underline;
+        text-transform: lowercase;
+        margin-top: 0%;
+        padding-right: 0%;
+    }
+}
+
+.row_series {
+    display: flex;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.button_repeticiones  {
+    width: 45px;
+    height: 43px;
+    z-index: 10;
+}

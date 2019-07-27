@@ -1,0 +1,30 @@
+  <ion-item button (click)="buttonClick(nombre)" detail>
+      <ion-ripple-effect></ion-ripple-effect>
+      <ion-grid>
+        <ion-row class="row_titulo">
+          <ion-col class="col_titulo_1">
+              <h2 class="text_color_gray">{{nombre}}</h2>
+          </ion-col>
+          <ion-col class="col_titulo_2">
+            <ion-button (click)="onClickDisplayDialog()" fill="clear" color="dark">
+              <h6 class="h6">{{numSeries}}x{{numRepeticiones}} {{numPeso}}kg</h6>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="row_series">
+          <ion-col *ngFor="let serie of listaSeries; let i = index">
+            <ion-button *ngIf="numSeriesView(i)" 
+                        shape="round"
+                        class="text_color_gray button_repeticiones"
+                        [color]="serie.activateButtom ? 'primary' : 'medium'"
+                        [disabled]="!serie.activateButtom"
+                        (click)="onClickSub($event, i)">
+                <ion-text color="medium">
+                  <h3 class="text_color_gray"> {{serie.numSerie}} </h3>
+                </ion-text>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </ion-item>

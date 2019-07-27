@@ -1,0 +1,23 @@
+<ion-header no-border>
+    <app-header-back titulo="{{titulo}}"></app-header-back>
+    <ion-searchbar placeholder="Buscar una categoria"></ion-searchbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <app-item-categoria-programa *ngFor="let categoria of categorias"
+        nombre="{{categoria.nombre}}"
+        imagen="{{categoria.imagen}}">
+    </app-item-categoria-programa>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-item color="light" (click)="showAlertNuevaCategoria()" button>
+        <ion-ripple-effect></ion-ripple-effect>
+        <ion-icon slot="start" name="add"></ion-icon>
+        <ion-label>Añadir categoria</ion-label>
+        <ion-icon slot="end" name="more" class="rotate-90"></ion-icon>
+      </ion-item>
+</ion-footer>
+  

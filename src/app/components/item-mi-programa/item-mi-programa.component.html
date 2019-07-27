@@ -1,0 +1,14 @@
+<ion-list *ngIf="somethings.length > 0">
+  <app-item-programa *ngFor="let something of somethings" 
+                            [imagen]="something.image"
+                            [nombre]="something.etiqueta">
+  </app-item-programa>
+</ion-list>
+
+<ion-item button *ngIf="somethings.length == 0" (click)="onClickCrearPrograma()" class="margin_buttom">
+  <ion-ripple-effect></ion-ripple-effect>
+
+  <ion-text class="text_color_white">
+    <h1>{{txt_crear_programa}}</h1>
+  </ion-text>
+</ion-item>

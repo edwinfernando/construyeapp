@@ -1,0 +1,35 @@
+<ion-header no-border>
+  <app-header titulo="Personalizado"></app-header>
+
+  <app-expandable-header [scrollArea]="myContent" headerHeight="200"> 
+    <app-image-content-header 
+        img_header="../../assets/img/img_entrenamiento.png"
+        titulo="Que comience"
+        subtitulo="El cambio es AHORA!"
+        [scrollArea]="myContent" marginBottom="0"
+        ></app-image-content-header>
+  </app-expandable-header>
+
+  <ion-toolbar color="light" mode="md">
+    <ion-segment color="primary" mode="md" [(ngModel)]="section" disabled>
+      <ion-segment-button *ngFor="let programa of programas" value="programa.valor">
+        <ion-label>{{programa.nombre}}</ion-label>
+
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content #myContent fullscreen [scrollEvents]="true">
+  <!--<div [ngSwitch]="section">-->
+        <ion-list> <!--*ngSwitchCase="'one'"-->
+                <app-item-personalizado *ngFor="let something of programas[0].somethings; let i = index"
+                [numero]="i + 1"        
+                [nombre]="something.etiqueta"
+                [descripcion]="something.descripcion"></app-item-personalizado>
+                
+        </ion-list>
+  <!--</div>-->
+
+</ion-content>

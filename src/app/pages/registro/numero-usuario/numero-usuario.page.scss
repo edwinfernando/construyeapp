@@ -1,0 +1,54 @@
+.titulo {
+    padding: 0;
+
+    h2 {
+        font-family: "Futura";
+        text-align: left;
+        color: var(--ion-color-light);
+        font-size: 1.4em;
+        margin-top: 0%;
+        margin-left: 10%;
+        margin-right: auto;
+        margin-bottom: 0%;
+        font-style: italic;
+        }
+    }
+
+.image_fondo {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    }
+
+.input_item{
+    --background: transparent;
+    color: var(--ion-color-light);
+    margin-left: 10%;
+    margin-right: 10%;
+
+    input {
+        color: var(--ion-color-light);
+    }
+}
+
+ion-item {
+    --border-color: var(--ion-color-primary);
+  }
+
+  .contenido{
+    font-family: "Futura";
+    margin-bottom: 0.5em;
+    font-size: 0.7em;
+    text-align: left;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    color: white;
+    }
+
+.bottom {
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+}

@@ -1,0 +1,38 @@
+.image {
+    width: 100%;
+    position: relative;
+}
+
+ion-grid {
+    position: absolute;
+    top: 0;
+}
+
+.titulo_header {
+    width: 100%;
+    font-family: "Futura Std";
+    font-weight: 700;
+    position:fixed;
+    font-style: italic;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin-left: 35px;
+}
+
+.subtitulo_header {
+    font-family: "Streetbrush";
+    font-weight: 700;
+    line-height: 1.2;
+    position:fixed;
+    text-align: right;
+    margin-top: 36px;
+    margin-right: 36px;
+}
+
+h1 {
+    font-size: 160%;
+}
+
+h2 {
+    font-size: 35px;
+}

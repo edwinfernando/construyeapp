@@ -1,0 +1,38 @@
+<ion-header no-border>
+  <app-header titulo="Entrenamiento"></app-header>
+
+  <app-expandable-header [scrollArea]="myContent" headerHeight="200"> 
+    <app-image-content-header 
+        img_header="../../assets/img/img_entrenamiento.png"
+        titulo="Te gustaría"
+        subtitulo="Obtener mejores resultados?"
+        [scrollArea]="myContent" marginBottom="0"
+        ></app-image-content-header>
+  </app-expandable-header>
+
+  <ion-toolbar color="light" mode="md">
+    <ion-segment color="primary" mode="md" [(ngModel)]="section">
+      <ion-segment-button value="one">
+          <ion-label>PROGRAMAS BASICOS</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="two">
+          <ion-label>MIS PROGRAMAS</ion-label>  
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #myContent fullscreen [scrollEvents]="true">
+  <div [ngSwitch]="section">
+    <ion-list *ngSwitchCase="'one'">
+        <app-item-programa *ngFor="let something of somethings" 
+                                [imagen]="something.image"
+                                [nombre]="something.etiqueta"></app-item-programa>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'two'">
+        <app-item-mi-programa></app-item-mi-programa>
+    </ion-list>
+  </div>
+
+</ion-content>
