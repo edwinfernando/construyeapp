@@ -1,0 +1,52 @@
+<app-header-cancelar booVolver="true"></app-header-cancelar>
+
+<ion-content fullscreen>
+  <ion-slide class="fondo">
+      <img [src]="img_fondo" class="image_fondo">
+
+      <ion-row class="encuesta">
+          <ion-col size="12" class="titulo_encuesta">
+              <h2>{{titulo}}</h2>
+          </ion-col>
+          <ion-col size="12" class="subtitulo_encuesta">
+              <h5>{{subtitulo}}</h5>
+          </ion-col>
+          <ion-col size="12">
+            <br>
+          </ion-col>
+          <!-- Preguntas-->
+          <ion-col size="12">
+            <ion-input class="input_medidas" placeholder="EDAD"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-input class="input_medidas" placeholder="ESTATURA"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-input class="input_medidas" placeholder="PESO"></ion-input>
+          </ion-col>
+          <ion-col size="12">
+            <ion-select class="input_medidas" placeholder="OBJETIVO" 
+                        interface="action-sheet"
+                        cancelText="Cancelar">
+              <ion-select-option value="f">GANAR PESO</ion-select-option>
+              <ion-select-option value="m">PERDER PESO</ion-select-option>
+            </ion-select>
+          </ion-col>
+      
+          <ion-col size="12" class="bottom">
+              <ion-button class="button_encuesta"
+                      type="submit"
+                      size="large"
+                      shape="round"
+                      color="primary"
+                      (click)="siguientePregunta()">
+                        <ion-text color="light">
+                            <h4>Finalizar</h4>
+                          </ion-text>
+                </ion-button>
+          </ion-col>
+      </ion-row>
+  </ion-slide>
+</ion-content>
+
+<app-footer-encuesta posicion="{{posicionFooter}}"></app-footer-encuesta>

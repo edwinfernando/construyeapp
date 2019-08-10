@@ -23,7 +23,16 @@ const routes: Routes = [
   { path: 'contactar-usuario', loadChildren: './pages/registro/contactar-usuario/contactar-usuario.module#ContactarUsuarioPageModule' },
   { path: 'selecciona-genero', loadChildren: './pages/encuesta/selecciona-genero/selecciona-genero.module#SeleccionaGeneroPageModule' },
   { path: 'actividad-fisica', loadChildren: './pages/encuesta/actividad-fisica/actividad-fisica.module#ActividadFisicaPageModule' },
-  { path: 'comidas', loadChildren: './pages/encuesta/comidas/comidas.module#ComidasPageModule' }
+  { path: 'comidas', loadChildren: './pages/encuesta/comidas/comidas.module#ComidasPageModule' },
+  { path: 'carnes', loadChildren: './pages/encuesta/carnes/carnes.module#CarnesPageModule' },
+  { path: 'vegetales', loadChildren: './pages/encuesta/vegetales/vegetales.module#VegetalesPageModule' },
+  { path: 'frutas', loadChildren: './pages/encuesta/frutas/frutas.module#FrutasPageModule' },
+  { path: 'productos', loadChildren: './pages/encuesta/productos/productos.module#ProductosPageModule' },
+  { path: 'diario', loadChildren: './pages/encuesta/diario/diario.module#DiarioPageModule' },
+  { path: 'malos-habitos', loadChildren: './pages/encuesta/malos-habitos/malos-habitos.module#MalosHabitosPageModule' },
+  { path: 'medidas', loadChildren: './pages/encuesta/medidas/medidas.module#MedidasPageModule' },
+  { path: 'pre-existentes', loadChildren: './pages/encuesta/pre-existentes/pre-existentes.module#PreExistentesPageModule' },
+  { path: 'tu-foto', loadChildren: './pages/encuesta/tu-foto/tu-foto.module#TuFotoPageModule' }
 ];
 @NgModule({
   imports: [

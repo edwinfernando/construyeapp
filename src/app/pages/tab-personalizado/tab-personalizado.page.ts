@@ -38,7 +38,9 @@ export class TabPersonalizadoPage implements OnInit {
     this.activeRoute.queryParams.subscribe((res) => {
       this.isLogged = res.isLogged;
     });
+  }
 
+  ionViewWillEnter() {
     if (!this.isLogged) {
       this.gotoSlidePersonalizado();
     }

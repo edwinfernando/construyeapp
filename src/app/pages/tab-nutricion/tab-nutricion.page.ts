@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-tab-nutricion',
@@ -10,10 +10,16 @@ export class TabNutricionPage implements OnInit {
 
   isLogged = false;
   isEncuestado = false;
-  constructor(private router: Router) { }
+  constructor(private activeRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
+    this.activeRoute.queryParams.subscribe((res) => {
+      this.isLogged = res.isLogged;
+      this.isEncuestado = res.isEncuestado;
+    });
+  }
 
+  ionViewWillEnter() {
     if (!this.isLogged && !this.isEncuestado) {
       this.gotoEncuesta();
     }

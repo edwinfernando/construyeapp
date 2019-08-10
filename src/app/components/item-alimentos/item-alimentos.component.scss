@@ -1,0 +1,49 @@
+    .col_imagen {
+        width: 98%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 1px;
+        
+        border: 1.3px solid rgb(13,96,115);
+        border-radius: 5px;
+        --border-style: none;
+        --padding-start: 0px;
+        --inner-padding-end: 0px;
+
+        ion-row{
+            padding: 0%;
+        }  
+    }  
+
+    .col_imagen_click_false {
+        --background: transparent;
+        background: transparent;
+    }  
+
+    .col_imagen_click_true {
+        background: rgb(13,96,115);
+        --background: rgb(13,96,115);
+    }  
+
+    .img_alimento{
+        padding: 0px;
+
+        img {
+            width: 100%;
+            height: 60px;
+        }
+    }
+
+    .etq_alimento{
+        padding: 0px;
+
+        h6  {
+            margin: 0px;
+            font-size: 0.7em;
+            text-align: center;
+            text-transform: none;
+        }
+    }
+
+      

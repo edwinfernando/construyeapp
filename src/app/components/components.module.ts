@@ -14,6 +14,9 @@ import { ItemEjercicioProgramaComponent } from './item-ejercicio-programa/item-e
 import { HeaderCancelarComponent } from './header-cancelar/header-cancelar.component';
 import { ItemPersonalizadoComponent } from './item-personalizado/item-personalizado.component';
 import { FooterEncuestaComponent } from './footer-encuesta/footer-encuesta.component';
+import { ItemAlimentosComponent } from './item-alimentos/item-alimentos.component';
+import { ItemsHabitosComponent } from './items-habitos/items-habitos.component';
+import { ItemFotosComponent } from './item-fotos/item-fotos.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { FooterEncuestaComponent } from './footer-encuesta/footer-encuesta.compo
     ItemEjercicioProgramaComponent,
     HeaderCancelarComponent,
     ItemPersonalizadoComponent,
-    FooterEncuestaComponent
+    FooterEncuestaComponent,
+    ItemAlimentosComponent,
+    ItemsHabitosComponent,
+    ItemFotosComponent
   ],
   exports: [
     HeaderComponent,
@@ -42,7 +48,10 @@ import { FooterEncuestaComponent } from './footer-encuesta/footer-encuesta.compo
     ItemEjercicioProgramaComponent,
     HeaderCancelarComponent,
     ItemPersonalizadoComponent,
-    FooterEncuestaComponent
+    FooterEncuestaComponent,
+    ItemAlimentosComponent,
+    ItemsHabitosComponent,
+    ItemFotosComponent
   ],
   imports: [
     CommonModule,

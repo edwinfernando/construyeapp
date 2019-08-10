@@ -11,6 +11,7 @@ export class ComidasPage implements OnInit {
   img_fondo = '/assets/slides/slide-01.png';
   titulo = 'COMIDAS';
   subtitulo = 'Por favor, selecciona el número de comidas que realizas en el día';
+  posicionFooter = 3;
 
   lActividades: {actividad: string}[] = [
     {
@@ -36,8 +37,9 @@ export class ComidasPage implements OnInit {
   }
 
   siguientePregunta(respuesta: any) {
-    this.router.navigate(['actividad-fisica'], {
-      queryParams: {}});
+    this.router.navigate(['carnes'], {
+      queryParams: {
+      }});
   }
 
   getFontSize(i: number) {

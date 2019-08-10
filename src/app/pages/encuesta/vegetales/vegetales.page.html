@@ -1,0 +1,44 @@
+<app-header-cancelar booVolver="true"></app-header-cancelar>
+
+<ion-content fullscreen>
+  <ion-slide class="fondo">
+      <img [src]="img_fondo" class="image_fondo">
+
+      <ion-row class="encuesta">
+          <ion-col size="12" class="titulo_encuesta">
+              <h2>{{lEncuestaAlimentos[posicion].titulo}}</h2>
+          </ion-col>
+          <ion-col size="12" class="subtitulo_encuesta">
+              <h5>{{lEncuestaAlimentos[posicion].subtitulo}}</h5>
+          </ion-col>
+          <ion-col size="12">
+            <br>
+          </ion-col>
+          <!-- Preguntas-->
+          <ion-col size="12">
+            <ion-row>
+              <ion-col size="4"  *ngFor="let alimento of lEncuestaAlimentos[posicion].lAlimentos; let i = index">
+                  <app-item-alimentos img_alimento="{{alimento.img_alimento}}"
+                                      alimento={{alimento.alimento}}>
+                  </app-item-alimentos>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+      
+          <ion-col size="12" class="bottom">
+              <ion-button class="button_encuesta"
+                      type="submit"
+                      size="large"
+                      shape="round"
+                      color="primary"
+                      (click)="siguientePregunta()">
+                        <ion-text color="light">
+                            <h4>Continuar</h4>
+                          </ion-text>
+                </ion-button>
+          </ion-col>
+      </ion-row>
+  </ion-slide>
+</ion-content>
+
+<app-footer-encuesta posicion="{{posicionFooter}}"></app-footer-encuesta>

@@ -77,6 +77,9 @@ export class FooterEncuestaComponent implements OnInit {
   }
 
   getTitulosEncuesta(numero: number) {
+
+    console.log(numero);
+
     if (numero < 4) {
       this.titulo1 = this.lEncuesta[0].nombre;
       this.titulo2 = this.lEncuesta[1].nombre;

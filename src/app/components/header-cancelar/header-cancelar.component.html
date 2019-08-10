@@ -1,8 +1,12 @@
 <ion-toolbar class="toolbar">
     <ion-buttons slot="start">
         <ion-back-button  icon="null"  defaultHref="/" onclick="" mode="md" > 
-          <ion-button color="primary">
+          <ion-button *ngIf="!booVolver" color="primary">
             CANCELAR
+           </ion-button>
+           <ion-button *ngIf="booVolver" color="primary">
+              <ion-icon name="arrow-back" mode="ios"></ion-icon>
+              VOLVER
            </ion-button>
         </ion-back-button>
        

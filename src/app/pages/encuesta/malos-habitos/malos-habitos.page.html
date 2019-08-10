@@ -1,0 +1,43 @@
+<app-header-cancelar booVolver="true"></app-header-cancelar>
+
+<ion-content fullscreen>
+  <ion-slide class="fondo">
+      <img [src]="img_fondo" class="image_fondo">
+
+      <ion-row class="encuesta">
+          <ion-col size="12" class="titulo_encuesta">
+              <h2>{{titulo}}</h2>
+          </ion-col>
+          <ion-col size="12" class="subtitulo_encuesta">
+              <h5>{{subtitulo}}</h5>
+          </ion-col>
+          <ion-col size="12">
+            <br>
+          </ion-col>
+          <!-- Preguntas-->
+          <ion-col size="12">
+            <ion-row>
+              <ion-col class="col_habitos" size="12" *ngFor="let habitos of lHabitos; let i = index">
+                  <app-items-habitos habitos="{{habitos.habitos}}">
+                  </app-items-habitos>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+      
+          <ion-col size="12" class="bottom">
+              <ion-button class="button_encuesta"
+                      type="submit"
+                      size="large"
+                      shape="round"
+                      color="primary"
+                      (click)="siguientePregunta()">
+                        <ion-text color="light">
+                            <h4>Continuar</h4>
+                          </ion-text>
+                </ion-button>
+          </ion-col>
+      </ion-row>
+  </ion-slide>
+</ion-content>
+
+<app-footer-encuesta posicion="{{posicionFooter}}"></app-footer-encuesta>

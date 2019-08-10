@@ -1,0 +1,16 @@
+<ion-item button class="item">
+  <ion-grid>
+    <ion-row class="row_foto">
+      <ion-col size="3" class="col_imagen">
+          <img *ngIf="imagen" [src]="imagen">
+          <ion-icon name="close" color="warning"></ion-icon>
+      </ion-col>
+      <ion-col size="8" class="col_titulo">
+        <h2 class="text_color_gray">{{etiqueta}}</h2>
+      </ion-col>
+      <ion-col size="1" class="col_icon">
+        <ion-icon name="camera"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-item>

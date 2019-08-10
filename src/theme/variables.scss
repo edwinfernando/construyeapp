@@ -209,7 +209,15 @@ ion-input {
   position: absolute;
   }
 
+  ion-col{
+    padding: 0px;
+  }
+
   /** ENCUESTA **/
+  .encuesta{
+    margin-left: 8% !important;
+    margin-right: 8% !important;
+  }
 
 .titulo_encuesta{
   padding: 0;
@@ -220,8 +228,6 @@ ion-input {
       color: var(--ion-color-light);
       font-size: 1.8em;
       margin-top: 0%;
-      margin-left: 10%;
-      margin-right: 10%;
       margin-bottom: 0%;
       font-style: italic;
       }
@@ -234,10 +240,8 @@ ion-input {
     font-family: "Futura";
     margin-bottom: 0.5em;
     text-align: left;
-    font-size: 0.8em;
+    font-size: 0.7em;
     margin-top: 0%;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 0%;
     letter-spacing: 0.1em;
     color: white;
@@ -247,13 +251,12 @@ ion-input {
 .boton_encuesta {
   --border-radius: 5px;
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
 
   h2{
       filter: none;
       font-family: "Futura std";
       font-style: normal;
+      text-align: center;
       margin: 0;
   }
 }
@@ -264,4 +267,16 @@ ion-input {
   --background:rgba(13,96,115,0.7);
   filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#0D607300,endColorstr=#0D607300);
   zoom: 1;
+}
+
+.button_encuesta {
+  margin-top: 20px;
+ 
+  h4 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-transform: initial;
+  }
 }

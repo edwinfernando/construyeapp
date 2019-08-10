@@ -1,0 +1,22 @@
+.col_habitos {
+    padding-bottom: 3px;
+}
+
+.input_medidas {
+    color: white;
+    --background: transparent;
+    border: 1.2px solid rgba(13,96,115,0.8);
+    border-radius: 5px;
+    --min-height: 5vh; 
+    margin-top: 2px;
+    padding-left: 10px;
+    
+    h2{
+        filter: none;
+        font-family: "Futura std";
+        font-style: normal;
+        text-align: left;
+        padding: 0px;
+        margin: 0px;
+    }
+  }

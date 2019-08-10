@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header-cancelar',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-cancelar.component.scss'],
 })
 export class HeaderCancelarComponent implements OnInit {
+
+  @Input() booVolver: boolean;
 
   constructor() { }
 
